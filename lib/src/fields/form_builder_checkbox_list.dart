@@ -73,8 +73,9 @@ class _FormBuilderCheckboxListState extends State<FormBuilderCheckboxList> {
       checkColor: widget.checkColor,
       materialTapTargetSize: widget.materialTapTargetSize,
       tristate: widget.tristate,
-      value: widget.options.contains(field.value),
-      //field.value.contains(widget.options[i].value),
+      value: 
+      //widget.options.contains(field.value),
+      field.value.contains(widget.options[i].value),
       onChanged: _readOnly
           ? null
           : (bool value) {
